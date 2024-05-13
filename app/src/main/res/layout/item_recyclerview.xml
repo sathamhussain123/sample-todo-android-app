@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="4dp"
+    android:id="@+id/mTaskRow"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center|start"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/mTitle"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:text="@string/app_name"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/mDescription"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center|start"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="12.5sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mDay"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="31"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/mMonth"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JAN"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
