@@ -15,14 +15,6 @@ pipeline {
             }
         }
 
-        //stage('Set Up Gradle Wrapper') {
-          //  steps {
-                // Set up Gradle wrapper
-            //    sh 'gradle wrapper'
-              //  sh './gradlew wrapper --gradle-version 7.5'
-            //}
-        //}
-
         stage('Build') {
             steps {
                // Build the Android app
