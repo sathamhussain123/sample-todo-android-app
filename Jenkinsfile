@@ -1,11 +1,11 @@
 pipeline {
     agent any
 
-    environment {
+   // environment {
         //GRADLE_HOME = '/path/to/gradle'  // Update this to the correct path if not in PATH
         //ANDROID_HOME = '/path/to/android/sdk'  // Path to Android SDK
         //PATH = "$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$PATH"
-    }
+   // }
 
     stages {
         stage('Clone Repository') {
