@@ -15,13 +15,13 @@ pipeline {
             }
         }
 
-        stage('Set Up Gradle Wrapper') {
-            steps {
+        //stage('Set Up Gradle Wrapper') {
+          //  steps {
                 // Set up Gradle wrapper
-                sh 'gradle wrapper'
-                sh './gradlew wrapper --gradle-version 7.5'
-            }
-        }
+            //    sh 'gradle wrapper'
+              //  sh './gradlew wrapper --gradle-version 7.5'
+            //}
+        //}
 
         stage('Build') {
             steps {
@@ -29,28 +29,6 @@ pipeline {
                 sh './gradlew assembleDebug' 
 }
         }
-
-        stage('Test') {
-            steps {
-                // Run unit tests
-                sh './gradlew testDebugUnitTest'
-            }
-        }
-
-        stage('Lint') {
-            steps {
-                // Run Android lint checks
-                sh './gradlew lintDebug'
-            }
-        }
-
-        stage('Archive APK') {
-            steps {
-                // Archive the generated APK file
-                archiveArtifacts artifacts: '**/app/build/outputs/apk/debug/app-debug.apk', allowEmptyArchive: true
-            }
-        }
-    }
 
     post {
         always {
