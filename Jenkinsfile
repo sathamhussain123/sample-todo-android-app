@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Give execution permission to the gradlew script
-                // sh 'chmod +x ./gradlew'
+        sh 'chmod +x ./gradlew'
                 
                 // Build the Android app
                 sh "./gradlew wrapper --gradle-version 7.5"
