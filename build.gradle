@@ -2,7 +2,7 @@
 plugins {
     //alias(libs.plugins.android.application) apply false
   id("com.android.application") version "8.1.0"
-//android {
+android {
     compileSdkVersion 34  // Specify the SDK version your app will compile against
-//}
+}
 }
