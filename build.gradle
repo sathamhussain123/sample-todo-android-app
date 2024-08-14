@@ -4,6 +4,11 @@ plugins {
   id("com.android.application") version "8.1.0"
 }
 android {
-    compileSdkVersion 34  // Specify the SDK version your app will compile against
+    compileSdkVersion 33  // Specify the SDK version your app will compile against
+}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
 }
 
