@@ -3,6 +3,7 @@ pipeline {
 
     environment {
         ANDROID_HOME = '/Users/apple/Library/Android/sdk' // Replace with the actual path to your Android SDK
+        GRADLE_USER_HOME='/Users/apple/softwares/gradle-7.5/bin'
         //PATH = "${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${env.PATH}"
         PATH = "/opt/homebrew/opt/openjdk@11/bin:/Users/apple/softwares/gradle-7.5/bin:/Users/apple/Library/Android/sdk/build-tools/33.0.3:$PATH"
     }
