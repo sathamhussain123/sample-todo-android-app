@@ -3,12 +3,12 @@ plugins {
     //alias(libs.plugins.android.application) apply false
   id("com.android.application") version "7.5"
 }
-android {
-    compileSdkVersion 33  // Specify the SDK version your app will compile against
-}
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(11)
-    }
-}
+//android {
+  //  compileSdkVersion 33  // Specify the SDK version your app will compile against
+//}
+//java {
+  //  toolchain {
+    //    languageVersion = JavaLanguageVersion.of(11)
+    //}
+//}
 
