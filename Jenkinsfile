@@ -20,7 +20,8 @@ pipeline {
                 // sh 'chmod +x ./gradlew'
                 
                 // Build the Android app
-                sh './gradlew assembleDebug'
+                sh "./gradlew wrapper --gradle-version 7.5"
+                //sh './gradlew assembleDebug'
             }
         }
     }
