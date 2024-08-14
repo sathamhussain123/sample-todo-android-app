@@ -3,9 +3,9 @@ pipeline {
 
     environment {
         ANDROID_HOME = '/Users/apple/Library/Android/sdk' // Replace with the actual path to your Android SDK
-        GRADLE_USER_HOME='/Users/apple/softwares/gradle-8.0/bin'
+        GRADLE_USER_HOME='/Users/apple/softwares/gradle-7.5/bin'
         //PATH = "${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:${env.PATH}"
-        PATH = "/opt/homebrew/opt/openjdk@11/bin:/Users/apple/softwares/gradle-8.0/bin:/Users/apple/Library/Android/sdk/build-tools/33.0.3:$PATH"
+        PATH = "/opt/homebrew/opt/openjdk@11/bin:/Users/apple/softwares/gradle-7.5/bin:/Users/apple/Library/Android/sdk/build-tools/33.0.3:$PATH"
     }
     stages {
         stage('Clone Repository') {
@@ -21,7 +21,7 @@ pipeline {
         sh 'chmod +x ./gradlew'
                 
                 // Build the Android app
-                sh "./gradlew wrapper --gradle-version 8.0"
+                //sh "./gradlew wrapper --gradle-version 7.5"
                 //sh './gradlew assembleDebug --no-daemon --stacktrace'
 
                 sh './gradlew assembleDebug'
