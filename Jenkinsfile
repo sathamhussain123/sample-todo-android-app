@@ -22,9 +22,9 @@ pipeline {
                 
                 // Build the Android app
                 sh "./gradlew wrapper --gradle-version 8.0"
-                sh './gradlew assembleDebug --no-daemon --stacktrace'
+                //sh './gradlew assembleDebug --no-daemon --stacktrace'
 
-                //sh './gradlew assembleDebug'
+                sh './gradlew assembleDebug'
             }
         }
     }
